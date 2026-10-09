@@ -55,7 +55,7 @@ This is intentionally simple. Real billing tokens vary by model, language, punct
 
 **Deliverables:** optimized prompt · original and optimized token counts · percentage reduction · five-line explanation of what was removed and preserved.
 
-➡ [Read the full submission](.Challenge1.md)
+➡ [Read the full submission](Challenge1.md)
 
 ### Challenge 2 — Context Selection
 
@@ -70,7 +70,7 @@ This is intentionally simple. Real billing tokens vary by model, language, punct
 
 **Deliverables:** included-context checklist · excluded-context checklist · final debugging prompt · reasoning for the selection · estimated token comparison.
 
-➡ [Read the full submission](.challenge2.md)
+➡ [Read the full submission](Challenge2.md)
 
 ### Challenge 3 — Multi-Turn Workflow Optimization
 
@@ -92,7 +92,7 @@ This is intentionally simple. Real billing tokens vary by model, language, punct
 
 **Deliverables:** staged workflow · input/output/gate per stage · reusable context contract outline · context handoff template · token-saving and quality explanation.
 
-➡ [Read the full submission](.challenge3.md)
+➡ [Read the full submission](Challenge3.md)
 
 ---
 
