@@ -1,0 +1,39 @@
+Run the script Challenge3.py to get the below output
+
+================================================================
+CHALLENGE 3 - MULTI-TURN WORKFLOW  (tokens = characters / 4)
+================================================================
+  Approach                                     Chars      Tokens
+----------------------------------------------------------------
+  A. One-shot (whole repo)                 2,000,400     500,100
+  B. Naive multi-turn (full history)       1,562,400     390,600
+  C. Staged + contract + handoff             347,200      86,800
+----------------------------------------------------------------
+  Per-stage load (C)           :   10,850 tokens
+  Contract (referenced, once)  :      275 tokens
+  Reduction C vs A             :    82.6%
+  Reduction C vs B             :    77.8%
+
+STAGE PLAN
+----------------------------------------------------------------
+  1. Discovery & Plan                       deps: -
+  2. Data & API Contracts                   deps: 1
+  3. Authentication                         deps: 2  [DEDICATED GATE]
+  4. Catalog, Search & Filters              deps: 2
+  5. Checkout                               deps: 3, 4
+  6. Payments                               deps: 5  [DEDICATED GATE]
+  7. Interface, Accessibility & Perf        deps: 3, 4, 5, 6
+  8. Regression, Bug Closure & Release      deps: 1, 2, 3, 4, 5, 6, 7
+
+COMPETITION-RULE CHECK
+----------------------------------------------------------------
+  [OK   ] 6-8 stages
+  [OK   ] Authentication has a dedicated gate
+  [OK   ] Payments has a dedicated gate
+  [OK   ] Every dependency points to an earlier stage
+  [OK   ] Checkout depends on Authentication
+  [OK   ] Payments depends on Checkout
+  [OK   ] Release depends on all earlier stages
+  [OK   ] Contract referenced once per stage (not repeated history)
+----------------------------------------------------------------
+  Rules satisfied: 8/8  -> ALL RULES MET
