@@ -4,9 +4,9 @@ Practical, reproducible solutions to three **Token Optimization** challenges for
 
 | Challenge | Theme | Level | One-line idea |
 |-----------|-------|-------|---------------|
-| [1 — Prompt Compression](./challenge-1-prompt-compression/) | Write less, say everything | Beginner | Turn a rambling prompt into a structured one and cut ~58% of tokens with zero lost requirements |
-| [2 — Context Selection](./challenge-2-context-selection/) | Send only what matters | Beginner–Intermediate | Debug a 401 after an auth upgrade using ~0.4% of the repository's tokens |
-| [3 — Multi-Turn Workflow](./challenge-3-multi-turn-workflow/) | Split big work into verified stages | Intermediate | Replace a "refactor everything" one-shot with 8 gated stages, a shared contract, and compact handoffs |
+| [1 — Prompt Compression] | Write less, say everything | Beginner | Turn a rambling prompt into a structured one and cut ~58% of tokens with zero lost requirements |
+| [2 — Context Selection] | Send only what matters | Beginner–Intermediate | Debug a 401 after an auth upgrade using ~0.4% of the repository's tokens |
+| [3 — Multi-Turn Workflow] | Split big work into verified stages | Intermediate | Replace a "refactor everything" one-shot with 8 gated stages, a shared contract, and compact handoffs |
 
 ---
 
