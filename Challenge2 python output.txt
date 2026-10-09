@@ -1,3 +1,5 @@
+Run the script Challenge2.py to get the below output
+
 ==================================================================
 CHALLENGE 2 - CONTEXT SELECTION  (tokens = characters / 4)
 ==================================================================
