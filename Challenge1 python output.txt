@@ -1,3 +1,5 @@
+Run the script Challenge1.py to get the below output
+
 ==============================================================
 CHALLENGE 1 - PROMPT COMPRESSION (Version A)
 Method: estimated tokens = characters / 4
