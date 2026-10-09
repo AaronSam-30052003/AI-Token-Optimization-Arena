@@ -1,7 +1,7 @@
 """
 Challenge 1 - Prompt Compression Challenge
 Token estimation method (from the challenge): estimated tokens = total characters / 4
-Run: python prompt_compression.py
+Run: python challenge1.py
 """
 
 ORIGINAL_PROMPT = (
