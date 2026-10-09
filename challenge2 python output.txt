@@ -1,0 +1,50 @@
+==================================================================
+CHALLENGE 2 - CONTEXT SELECTION  (tokens = characters / 4)
+==================================================================
+  Category                                             Chars  Tokens
+
+INCLUDED CONTEXT
+------------------------------------------------------------------
+  Exact 401 response + 2 server error lines              600     150
+  Authentication middleware                            3,000     750
+  Protected /api/profile route                         1,500     375
+  Client profile request                               1,200     300
+  Session and cookie config (sanitized)                1,500     375
+  Authentication package versions                        400     100
+  Auth-related upgrade diff                            4,000   1,000
+  Reproduction steps                                     400     100
+  Runtime environment details                            600     150
+------------------------------------------------------------------
+  TOTAL                                               13,200   3,300
+  + Debugging prompt itself                            1,081     270
+
+EXCLUDED CONTEXT
+------------------------------------------------------------------
+  250 unrelated React components (~3,000 each)       750,000 187,500
+  80 unrelated API routes (~2,000 each)              160,000  40,000
+  Complete package lockfile                          600,000 150,000
+  Generated API client files                         200,000  50,000
+  Unrelated database tables                           40,000  10,000
+  Six months of successful build logs              2,000,000 500,000
+  UI snapshots, icons, images (binary)                     0       0
+------------------------------------------------------------------
+  TOTAL                                            3,750,000 937,500
+
+TOKEN COMPARISON
+------------------------------------------------------------------
+  All available material :    940,800 tokens
+  Selected + prompt      :      3,570 tokens
+  Reduction              :      99.6%
+
+COMPETITION-RULE CHECK ON THE PROMPT
+------------------------------------------------------------------
+  [OK     ] Exact error kept (401 / /api/profile)
+  [OK     ] Reproduction path kept
+  [OK     ] Client side covered
+  [OK     ] Server side covered
+  [OK     ] Secrets masked
+  [OK     ] Evidence-based hypotheses requested
+  [OK     ] Smallest safe fix, no blind rewrite
+  [OK     ] Verification: login/session/protected route
+------------------------------------------------------------------
+  Rules satisfied: 8/8  -> ALL RULES MET
