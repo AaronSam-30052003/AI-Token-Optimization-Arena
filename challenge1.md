@@ -109,7 +109,7 @@ Tokens saved = 128
 ## Reproducing the Numbers (optional)
 
 ```bash
-python prompt_compression.py
+python challenge1.py
 ```
 
 The script applies the `characters ÷ 4` method to both prompts, prints the percentage reduction, and runs an automated check that every constraint keyword survives compression. Supporting files:
