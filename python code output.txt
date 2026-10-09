@@ -1,0 +1,99 @@
+==============================================================
+CHALLENGE 1 - PROMPT COMPRESSION (Version A)
+Method: estimated tokens = characters / 4
+==============================================================
+
+1) OPTIMIZED PROMPT
+--------------------------------------------------------------
+Task: Add a CSV export button to the analytics table in the existing React dashboard.
+
+Requirements:
+- Export only currently visible rows (filters and sort applied).
+- Keep visible column order; exclude hidden columns.
+- Dates in ISO 8601.
+- No new packages/dependencies.
+- Existing filtering and sorting must keep working.
+
+Process:
+1. Inspect project; list relevant files before changing code.
+2. Implement.
+3. Report changed files and verification steps.
+--------------------------------------------------------------
+
+2) Original estimated tokens : 220   (878 chars)
+3) Optimized estimated tokens: 114   (457 chars)
+4) Estimated reduction       : 48.2%   [PASS - target 40-60%]
+   Tokens saved              : 106
+
+5) REQUIREMENT PRESERVATION CHECK
+--------------------------------------------------------------
+  [OK     ] CSV export
+  [OK     ] Export button
+  [OK     ] React analytics table
+  [OK     ] Filtered rows
+  [OK     ] Sorted rows
+  [OK     ] Visible column order
+  [OK     ] Exclude hidden columns
+  [OK     ] ISO 8601 dates
+  [OK     ] No new dependency
+  [OK     ] Inspect project / list files
+  [OK     ] Implement
+  [OK     ] Report changes + verify
+  [OK     ] Existing filter/sort unchanged
+--------------------------------------------------------------
+  Preserved: 13/13 requirements  -> ALL CONSTRAINTS KEPT
+
+==============================================================
+CHALLENGE 1 - PROMPT COMPRESSION (Version B)
+Method: estimated tokens = characters / 4
+==============================================================
+
+1) OPTIMIZED PROMPT
+--------------------------------------------------------------
+Task: Add CSV export button to the React analytics table.
+
+Rules:
+- Export current filtered + sorted rows only.
+- Keep visible column order; exclude hidden columns.
+- Dates: ISO 8601.
+- No new dependencies.
+- Keep existing filter/sort behavior.
+
+Steps:
+1. Inspect project; list relevant files before editing.
+2. Implement.
+3. Report changed files + verification steps.
+--------------------------------------------------------------
+
+2) Original estimated tokens : 220   (878 chars)
+3) Optimized estimated tokens: 92   (368 chars)
+4) Estimated reduction       : 58.2%   [PASS - target 40-60%]
+   Tokens saved              : 128
+
+5) REQUIREMENT PRESERVATION CHECK
+--------------------------------------------------------------
+  [OK     ] CSV export
+  [OK     ] Export button
+  [OK     ] React analytics table
+  [OK     ] Filtered rows
+  [OK     ] Sorted rows
+  [OK     ] Visible column order
+  [OK     ] Exclude hidden columns
+  [OK     ] ISO 8601 dates
+  [OK     ] No new dependency
+  [OK     ] Inspect project / list files
+  [OK     ] Implement
+  [OK     ] Report changes + verify
+  [OK     ] Existing filter/sort unchanged
+--------------------------------------------------------------
+  Preserved: 13/13 requirements  -> ALL CONSTRAINTS KEPT
+
+==============================================================
+SIDE-BY-SIDE COMPARISON
+==============================================================
+Metric                      Original       Ver A       Ver B
+Characters                       878         457         368
+Estimated tokens                 220         114          92
+Reduction                          -       48.2%       58.2%
+Requirements kept                  -13/       1313/       13
+==============================================================
